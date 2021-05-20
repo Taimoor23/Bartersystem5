@@ -4,8 +4,8 @@ import { createAppContainer,createSwitchNavigator } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 
 import HomeScreen from '../screens/HomeScreen'
-import ExchangeScreen from '../screens/ExchangeScreen'
-import LoginScreen from '../screens/LoginScreen'
+import ExchangeScreen from '../screens/Exchange'
+import LoginScreen from '../screens/WelcomeScreen'
 
 export const BottomNavigator = createBottomTabNavigator({
    List:{
@@ -17,9 +17,9 @@ export const BottomNavigator = createBottomTabNavigator({
    } ,
 
     Exchange:{
-   screen:ExchangeScreen,
+   screen:Exchange,
    navigationOptions:{
-   tabBarLabel:"ExchangeScreen"
+   tabBarLabel:"Exchange"
    }
 
    } 
