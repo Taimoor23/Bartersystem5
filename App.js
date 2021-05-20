@@ -4,9 +4,9 @@ import { DrawerItems , createDrawerNavigator } from 'react-navigation-drawer';
 
 import customSideBarMenu from './components/customSideBarMenu'
 import { BottomNavigator } from './components/BottomNavigator';
-import  settings  from './components/settings';
+import  settings  from './components/settingScreen';
 
-import LoginScreen from './screens/LoginScreen'
+import LoginScreen from './screens/WelcomeScreen'
 
 export default function App() {
   return (
@@ -17,7 +17,7 @@ export default function App() {
  const AppDrawerNavigator = createDrawerNavigator(
  {
    home:{screen:BottomNavigator},
-   settings:{screen:settings}
+   settings:{screen:settingScreen}
  },
  {
         contentComponent: customSideBarMenu
@@ -28,7 +28,7 @@ export default function App() {
  )
 
  const SwitchNavigator = createSwitchNavigator({
-     LoginScreen:LoginScreen,
+    WelcomeScreen:WelcomeScreen,
      AppDrawerNavigator:AppDrawerNavigator,
  })
 
