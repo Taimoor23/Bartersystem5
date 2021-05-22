@@ -19,7 +19,7 @@ export default class CustomSideBarMenu extends React.Component{
             marginLeft:30
            }} 
            onPress={()=>{
-               this.props.navigation.navigate('LoginScreen')
+               this.props.navigation.navigate('WelcomeScreen')
                firebase.auth().signOut();
            }}>
            <Text>Log Out</Text>
